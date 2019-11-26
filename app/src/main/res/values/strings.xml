@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ForecastMVVM</string>
+
+    // Settings Screen
+    <string name="settings_title">Settings</string>
+    
+    <string name="weather_location_title">Weather Location</string>
+    <string name="device_location_title">Use device location</string>
+    <string name="device_location_subtitle">Allow the app to get your location</string>
+    <string name="location_title">Location</string>
+    <string name="location_subtitle">The location for which the weather is displayed</string>
+
+</resources>

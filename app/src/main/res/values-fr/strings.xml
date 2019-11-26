@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ForecastMVVM</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="weather_location_title">Localisation Météo</string>
+    <string name="device_location_title">Utiliser la localisation</string>
+    <string name="device_location_subtitle">Autorise la géolocalisation</string>
+    <string name="location_title">Localisation</string>
+    <string name="location_subtitle">Localisation de la météo choisie</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/weather_location_title" >
+
+        <SwitchPreference
+            android:key="USE_DEVICE_LOCATION"
+            android:title="@string/device_location_title"
+            android:summary="@string/device_location_subtitle"
+            android:defaultValue="true"
+            android:disableDependentsState="true" />
+
+        <EditTextPreference
+            android:key="CUSTOM_LOCATION"
+            android:title="@string/location_title"
+            android:summary="@string/location_subtitle"
+            android:defaultValue="Paris"
+            android:dependency="USE_DEVICE_LOCATION"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Units &amp; Language" >
+        <ListPreference
+            android:key="UNIT_SYSTEM"
+            android:title="Unit system"
+            android:summary="%s"
+            android:defaultValue="METRIC"
+            android:entries="@array/unitSystemEntries"
+            android:entryValues="@array/unitSystemValues" />
+
+        <ListPreference
+            android:key="LANGUAGE_SYSTEM"
+            android:title="Language"
+            android:summary="%s"
+            android:defaultValue="ENGLISH"
+            android:entries="@array/languageSystemEntries"
+            android:entryValues="@array/languageSystemValues" />
+
+        <Preference
+            android:icon="@android:drawable/ic_menu_call"
+            android:key="topcool"
+            android:summary="This is a cool button"
+            android:title="Acts like a button" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
